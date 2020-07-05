@@ -19,5 +19,7 @@ const messages = [welcomeMessage];
 app.get("/", function (request, response) {
   response.sendFile(__dirname + "/index.html");
 });
-
 app.listen(process.env.PORT);
+
+const port = process.env.PORT;
+console.log("port", port);
