@@ -30,12 +30,12 @@ app.get("/messages", (req, res) => {
 //    response.json(request.body)
 // });
 
-app.listen(process.env.PORT);
+// app.listen(process.env.PORT);
 
-const port = process.env.PORT;
-console.log("port", port);
+// const port = process.env.PORT;
+// console.log("port", port);
 
-//Start our server so that it listens for HTTP requests!
-// const listener = app.listen(3000, function () {
-//   console.log("Your app is listening on port " + listener.address().port);
-// });
+// Start our server so that it listens for HTTP requests!
+const listener = app.listen(3000, function () {
+  console.log("Your app is listening on port " + listener.address().port);
+});
